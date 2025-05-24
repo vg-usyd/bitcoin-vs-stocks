@@ -51,7 +51,7 @@
     <div class="container main-container py-5">
         <div class="central-card p-4 shadow-sm">
             <div class="text-center">
-                <div class="header-title">CoinvStocks</div>
+                <div class="header-title">Bitcoin vs Stocks</div>
                 <div class="header-subtitle">Compare Bitcoin & Stock Investments Instantly</div>
             </div>
             <!-- Manual Entry Form -->
@@ -61,7 +61,7 @@
                     <input type="number" class="form-control" id="amount" required min="1" step="0.01">
                 </div>
                 <div class="mb-3">
-                    <label for="start-date" class="form-label">Start Date</label>
+                    <label for="start-date" class="form-label">Start Date (starting from 01 Jan 2014)</label>
                     <input type="date" class="form-control" id="start-date" required>
                 </div>
                 <div class="mb-3">
@@ -69,19 +69,19 @@
                     <input type="date" class="form-control" id="end-date" required>
                 </div>
                 <div class="mb-3">
-                    <label for="stock-symbol" class="form-label">Stock Symbol (e.g., AAPL, GOOGL, MSFT)</label>
+                    <label for="stock-symbol" class="form-label">Stock Symbol (e.g., AAPL, GOOGL, MSFT, NVDA)</label>
                     <input type="text" class="form-control" id="stock-symbol" required placeholder="Enter stock symbol">
                 </div>
                 <button type="submit" class="btn btn-primary w-100 mb-2">Compare Performance</button>
             </form>
             <div class="row g-2 mt-2 mb-3">
                 <div class="col-12">
-                    <button id="download-csv" class="btn btn-secondary w-100">Download Request CSV</button>
+                    <button id="download-csv" class="btn btn-secondary w-100">Download Current Request CSV</button>
                 </div>
             </div>
             <div class="mb-3 p-3 bg-light rounded shadow-sm">
                 <div class="mb-2 fw-semibold text-secondary">
-                    Check your portfolio by uploading the previous CSV file
+                    Check your portfolio by uploading the previously downloaded CSV file
                 </div>
                 <input type="file" id="upload-csv" accept=".csv" class="form-control" />
             </div>
